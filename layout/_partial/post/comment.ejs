@@ -1,20 +1,16 @@
 <% if (page.comment){ %>
-<section id="comment">
-    <h2 class="title"><%= __('comment') %></h2>
 	<div id="container"></div>
-	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<link rel="stylesheet" href="/css/gitment.css">
+	<script src="/js/gitment.js"></script>
 	<script>
 		var gitment = new Gitment({
-  		id: '页面 ID', // 可选。默认为 location.href
   		owner: 'SidekickLx',
   		repo: 'sidekicklx.github.io',
   		oauth: {
     			client_id: 'c67cc292f191d3356eac',
-    			client_secret: 'c7085ec77f0bbb15360218905a55b64912f12c3a',
+    			client_secret: '1f8c667479b547a273c4c4d6f6652fb1b0e2825f',
   			},
 		})
 		gitment.render('container')
 	</script>
-</section>
 <% }%>
