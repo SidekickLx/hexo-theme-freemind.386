@@ -31,7 +31,7 @@ body {
 }
 
 @font-face {
-	font-family:'Fangzheng';src:local('方正像素12'),url('fonts/Fangzheng.ttf') format('truetype');font-weight:normal;font-style:normal
+	font-family:'Fangzheng';src:local('方正像素12'),url('fonts/Fangzheng.ttf') format('truetype');font-weight:normal;font-style:normal;
 }
 #sidebar {
 	font-size: .9em
