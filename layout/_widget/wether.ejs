@@ -1,10 +1,13 @@
-<% if (theme.wether.length){ %>
 <div class="widget">
-	<h4><%= __('wether') %></h4>
-	<ul class="blogroll list-unstyled">
-	<% for (var i in theme.wether){ %>
-		<li><img src="<%- "http://wttr.in/"+theme.wether[i].city+"_tqp0_transparency=255.png"%>"></img></li>
-	<% } %>
-	</ul>
+	<h4><%= __('weather') %></h4>
+	<script>
+			$.getJSON('https://json.geoiplookup.io/api?callback=?', function(data) {
+				var obj = document.getElementById("weather_img");
+				var src = "http://wttr.in/" + data.city + "_tqp0_transparency=255.png"
+				console.log(src)
+				obj.src = src;
+			});
+	</script>
+	<img id="weather_img" src=""></img>
 </div>
-<% } %>
+
